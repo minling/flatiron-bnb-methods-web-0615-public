@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: reservations
+#
+#  id         :integer          not null, primary key
+#  checkin    :date
+#  checkout   :date
+#  listing_id :integer
+#  guest_id   :integer
+#  created_at :datetime
+#  updated_at :datetime
+#  status     :string           default("pending")
+#
+
 describe Reservation do
   describe 'associations' do 
     it 'has a checkin time' do 

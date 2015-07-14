@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  created_at :datetime
+#  updated_at :datetime
+#  host       :boolean          default(FALSE)
+#
+
 describe User do
   describe 'associations' do
     it 'has a name' do

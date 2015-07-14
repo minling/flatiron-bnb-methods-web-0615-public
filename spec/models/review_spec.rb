@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: reviews
+#
+#  id             :integer          not null, primary key
+#  description    :text
+#  rating         :integer
+#  guest_id       :integer
+#  reservation_id :integer
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
 describe Review do
   describe 'associations' do
     it 'has a description' do

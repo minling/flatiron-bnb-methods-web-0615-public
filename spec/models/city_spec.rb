@@ -1,4 +1,15 @@
+# == Schema Information
+#
+# Table name: cities
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 describe City do
+
   describe 'associations' do 
     it 'has a name' do 
       expect(City.first.name).to eq('NYC')

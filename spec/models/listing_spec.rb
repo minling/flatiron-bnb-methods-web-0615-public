@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: listings
+#
+#  id              :integer          not null, primary key
+#  address         :string
+#  listing_type    :string
+#  title           :string
+#  description     :text
+#  price           :decimal(8, 2)
+#  neighborhood_id :integer
+#  host_id         :integer
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+
 describe Listing do
   describe 'attributes' do
 
